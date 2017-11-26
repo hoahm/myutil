@@ -58,4 +58,22 @@ var _ = Describe("Numutil", func() {
 			}
 		})
 	})
+
+	Describe("IsDigit", func() {
+		It("checks a string is a digit", func() {
+			for _, s := range [...]string{
+				"0", "001", "100", "-2147483648", "2147483647",
+			} {
+				Expect(IsDigit(s)).To(BeTrue())
+			}
+		})
+		
+		It("returns false if not a digit", func() {
+			for _, s := range []string{
+				"abc", "!@#$", "s100", "17A", "number1",
+			} {
+				Expect(IsDigit(s)).To(BeFalse())
+			}
+		})
+	})
 })

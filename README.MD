@@ -7,10 +7,17 @@ MyUtil is a simple library written in Golang for manipulate string, number, ... 
 * numutil
     * Xrand(min, max int) int {}
     * AtoSI(s, sep string) []int {}
+    * IsDigit(v string) bool {}
 
 * cmdutil
     * ReadLinePmt(prompt string) (string, error) {}
     * ReadLine() (string, error) {}
+
+* fileutil
+    * CurrentDir() string {}
+    * HomeDir() string {}
+    * Exists(name string) bool {}
+    * FilePath(dir, fileName, ext string) string {}
 
 * stringutil
     * RandString(length int) string {}
