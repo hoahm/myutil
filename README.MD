@@ -8,6 +8,7 @@ MyUtil is a simple library written in Golang for manipulate string, number, ... 
   * [fileutil](#fileutil)
   * [Stringutil](#stringutil)
 * [Data structures](#data-structures)
+  * [Linked list](#linked-list)
   * [Queue](#queue)
   * [Stack](#stack)
 
@@ -36,12 +37,38 @@ MyUtil is a simple library written in Golang for manipulate string, number, ... 
 
 ## Data structures
 
+### Linked list
+
+    import "github.com/hoahm/myutil/datastructures/list"
+
+    // Initialize an empty list
+    l := list.New()
+    
+    // Check if list is empty
+    l.IsEmpty()
+
+    // Get the length of list
+    l.Len()
+    l.Size()
+
+    // Insert element to the head
+    l.PushFront(1)
+
+    // Insert element to the tail
+    l.PushBack(1)
+
+    // Remove an element
+    l.Remove(1)
+
+    // Merge two lists
+    l.Merge(l2)
+
 ### Queue
 
     import "github.com/hoahm/myutil/datastructures/queue"
 
     // Initialize empty queue
-    q = queue.New()
+    q := queue.New()
 
     // Check if queue is empty
     q.IsEmpty()
@@ -66,7 +93,7 @@ MyUtil is a simple library written in Golang for manipulate string, number, ... 
     import "github.com/hoahm/myutil/datastructures/stack"
 
     // Initialize empty stack
-    s = stack.New()    
+    s := stack.New()    
 
     // Check if stack is empty
     s.IsEmpty()
