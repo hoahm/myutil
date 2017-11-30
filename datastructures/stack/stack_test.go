@@ -6,7 +6,6 @@
 package stack_test
 
 import (
-	"fmt"
 	"testing"
 
 	. "github.com/hoahm/myutil/datastructures/stack"
@@ -24,8 +23,6 @@ var _ = Describe("Stack", func() {
 		var s = New()
 
 		It("should be empty", func() {
-			fmt.Print("Len = ", s.Len())
-			fmt.Print("Top = ", s.Top())
 			Expect(s.IsEmpty()).To(BeTrue())
 		})
 
