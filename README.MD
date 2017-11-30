@@ -8,6 +8,7 @@ MyUtil is a simple library written in Golang for manipulate string, number, ... 
   * [fileutil](#fileutil)
   * [Stringutil](#stringutil)
 * [Data structures](#data-structures)
+  * [Queue](#queue)
   * [Stack](#stack)
 
 # Features
@@ -34,6 +35,31 @@ MyUtil is a simple library written in Golang for manipulate string, number, ... 
     * Reverse(s string) string {}
 
 ## Data structures
+
+### Queue
+
+    import "github.com/hoahm/myutil/datastructures/queue"
+
+    // Initialize empty queue
+    q = queue.New()
+
+    // Check if queue is empty
+    q.IsEmpty()
+
+    // Get the length of queue
+    q.Len()
+    q.Size()
+
+    // Get head element
+    q.Front()
+
+    // Get and remove head element
+    q.Pop()
+    q.DeQueue()
+
+    // Add new element to queue
+    q.Push(1)
+    q.EnQueue(1)
 
 ### Stack
 

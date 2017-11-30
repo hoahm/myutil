@@ -54,6 +54,7 @@ func (s *Stack) Pop() interface{} {
 	}
 	top := s.top
 	s.top = top.prev
+	s.length--
 	return top.value
 }
 
