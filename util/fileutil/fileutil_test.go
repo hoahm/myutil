@@ -8,7 +8,7 @@ package fileutil_test
 import (
 	"testing"
 
-	. "github.com/hoahm/myutil/fileutil"
+	. "github.com/hoahm/myutil/util/fileutil"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

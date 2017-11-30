@@ -8,7 +8,7 @@ package numutil_test
 import (
 	"testing"
 
-	. "github.com/hoahm/myutil/numutil"
+	. "github.com/hoahm/myutil/util/numutil"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

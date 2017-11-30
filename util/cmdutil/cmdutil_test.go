@@ -8,7 +8,7 @@ package cmdutil_test
 import (
 	"testing"
 
-	// . "github.com/hoahm/myutil/cmdutil"
+	// . "github.com/hoahm/myutil/util/cmdutil"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

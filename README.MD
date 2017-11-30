@@ -16,24 +16,36 @@ MyUtil is a simple library written in Golang for manipulate string, number, ... 
 
 ## Utils
 
-* numutil
-    * Xrand(min, max int) int {}
-    * AtoSI(s, sep string) []int {}
-    * IsDigit(v string) bool {}
+### numutil
 
-* cmdutil
-    * ReadLinePmt(prompt string) (string, error) {}
-    * ReadLine() (string, error) {}
+    import "github.com/hoahm/myutil/util/numutil"
 
-* fileutil
-    * CurrentDir() string {}
-    * HomeDir() string {}
-    * Exists(name string) bool {}
-    * FilePath(dir, fileName, ext string) string {}
+    numutil.Xrand(min, max int) int {}
+    numutil.AtoSI(s, sep string) []int {}
+    numutil.IsDigit(v string) bool {}
 
-* stringutil
-    * RandString(length int) string {}
-    * Reverse(s string) string {}
+### cmdutil
+
+    import "github.com/hoahm/myutil/util/cmdutil"
+
+    cmdutil.ReadLinePmt(prompt string) (string, error) {}
+    cmdutil.ReadLine() (string, error) {}
+
+### fileutil
+
+    import "github.com/hoahm/myutil/util/fileutil"
+
+    fileutil.CurrentDir() string {}
+    fileutil.HomeDir() string {}
+    fileutil.Exists(name string) bool {}
+    fileutil.FilePath(dir, fileName, ext string) string {}
+
+### stringutil
+
+    import "github.com/hoahm/myutil/util/stringutil"
+
+    stringutil.RandString(length int) string {}
+    stringutil.Reverse(s string) string {}
 
 ## Data structures
 

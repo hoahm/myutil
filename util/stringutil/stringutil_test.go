@@ -7,7 +7,7 @@ package stringutil_test
 import (
 	"testing"
 
-	. "github.com/hoahm/myutil/stringutil"
+	. "github.com/hoahm/myutil/util/stringutil"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
