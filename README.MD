@@ -2,7 +2,17 @@
 
 MyUtil is a simple library written in Golang for manipulate string, number, ... for quickly use in the future. It's also my very first Golang project that integrates BDD testing.
 
+* [Utils](#utils)
+  * [Numutil](#numutil)
+  * [Cmdutil](#cmdutil)
+  * [fileutil](#fileutil)
+  * [Stringutil](#stringutil)
+* [Data structures](#data-structures)
+  * [Stack](#stack)
+
 # Features
+
+## Utils
 
 * numutil
     * Xrand(min, max int) int {}
@@ -22,6 +32,31 @@ MyUtil is a simple library written in Golang for manipulate string, number, ... 
 * stringutil
     * RandString(length int) string {}
     * Reverse(s string) string {}
+
+## Data structures
+
+### Stack
+
+    import "github.com/hoahm/myutil/datastructures/stack"
+
+    // Initialize empty stack
+    s = stack.New()    
+
+    // Check if stack is empty
+    s.IsEmpty()
+
+    // Get the length of stack
+    s.Len()
+    s.Size()
+
+    // Get peak element
+    s.Top()
+
+    // Get and remove peak element
+    s.Pop()
+
+    // Add new element to the peak
+    s.Push(1)
 
 # How to use
 
