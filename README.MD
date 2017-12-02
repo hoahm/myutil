@@ -8,6 +8,7 @@ MyUtil is a simple library written in Golang for manipulate string, number, ... 
   * [fileutil](#fileutil)
   * [Stringutil](#stringutil)
 * [Data structures](#data-structures)
+  * [Heap](#heap)
   * [Linked list](#linked-list)
   * [Queue](#queue)
   * [Stack](#stack)
@@ -48,6 +49,36 @@ MyUtil is a simple library written in Golang for manipulate string, number, ... 
     stringutil.Reverse(s string) string {}
 
 ## Data structures
+
+### Heap
+
+    import "github.com/hoahm/myutil/datastructures/heap"
+
+    a := []int{4, 1, 9, 3}
+
+    // Build min heap
+    h := Build(a)
+
+    // Build max heap
+    h := BuildMax(a)
+
+    // Check if heap is empty
+    h.IsEmpty()
+
+    // Get the first element
+    i := h.Top()
+
+    // Insert new element to min heap
+    h.Push(3)
+
+    // Insert new element to max heap
+    h.PushMax(3)
+
+    // Remove 1st element from min heap
+    h.Pop()
+
+    // Remove 1st element from max heap
+    h.PopMax()
 
 ### Linked list
 
